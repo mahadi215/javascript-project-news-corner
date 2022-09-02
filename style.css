@@ -1,0 +1,23 @@
+
+
+/* navbar style  */
+nav{
+    background-color: #7676f7;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.logo-text{
+background-color: white;
+color: #7676f7;
+margin-left: 5px;
+padding: 3px 8px;
+border-radius: 5px;
+}
+.nav-link{
+    border-bottom: 2px transparent white;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+}
