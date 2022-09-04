@@ -26,6 +26,10 @@ border-radius: 5px;
 }
 
 
+#catagory-container{
+    width: 95%;
+    margin: auto;
+}
 
 #catagory-container li{
     display: inline-block;
@@ -37,10 +41,11 @@ border-radius: 5px;
 #item-number{
     background-color: antiquewhite;
     border-radius: 10px;
-    height: 80px;
+    height: 50px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 .author-img{
     width: 50px;
