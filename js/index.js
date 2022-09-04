@@ -16,7 +16,8 @@ const showCategorys = categorys => {
 // showCategorys();
 
 const getId = (id) =>{
-    console.log( id);
+    // console.log( id);
+    toggleSpiner(true);
     const url = `https://openapi.programming-hero.com/api/news/category/0${id}`
     fetch(url)
     .then(res => res.json())
@@ -62,13 +63,27 @@ const getId = (id) =>{
          
         `;
         newsCcontainer.appendChild(newsDiv);
+        toggleSpiner(false)
         
         // console.log(showNewsDetils());
         // const showNewsDetils = 
-        })
-     }
+        });
+     };
     
-}
+};
+
+const toggleSpiner = isLoading => {
+  const loaderDiv = document.getElementById('spiner');
+  if( isLoading){
+    loaderDiv.classList.remove('d-none');
+  }
+  else{
+    loaderDiv.classList.add('d-none');
+  }
+
+};
+
+
 const getNewsDetils = (newsId) =>{
   const url = `  https://openapi.programming-hero.com/api/news/${newsId}`
     fetch(url)

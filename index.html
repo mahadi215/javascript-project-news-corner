@@ -23,7 +23,7 @@
                     <a class="nav-link active fw-bold text-white" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#">Blog</a>
+                    <a class="nav-link fw-bold text-white" href="blog.html">Blog</a>
                   </li>
                 </ul>
               </div>
@@ -35,12 +35,20 @@
     <main>
         <!-- catagory section  -->
         <section>
-           <ul id="catagory-container">
+           <ul id="catagory-container" >
             
            </ul>
         </section>
-        <section class="container">
+        <section id="item-number">
 
+        </section>
+
+        <section class="container">
+          <div id="spiner" class=" d-none d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
             <div id="news-container" class="row">
               
             </div>
@@ -65,6 +73,9 @@
         </section>
         
     </main>
+    <footer>
+      <p>copyright: News Corner 2022</p>
+    </footer>
 
     <!-- bootstrap link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
